@@ -1,0 +1,14 @@
+com/example/App.class
+com/example/rest/controllers/StatisticsController.class
+com/example/AppConfig.class
+com/example/rest/Rest.class
+com/example/soap/config/WebServiceConfig.class
+com/example/HelloController.class
+com/example/rest/controllers/BankController.class
+com/example/soap/entity/stats.class
+com/example/soap/controller/SOAPStatisticController.class
+com/example/rest/repositories/StatisticsRepository.class
+com/example/rest/controllers/GraphQLStatisticController.class
+com/example/rest/controllers/StatisticInput.class
+com/example/rest/entity/stats.class
+com/example/rest/services/StatisticsService.class

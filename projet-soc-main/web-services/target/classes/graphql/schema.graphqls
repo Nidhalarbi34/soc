@@ -1,0 +1,52 @@
+type Delivery {
+    id: ID!
+    orderId: String
+    agentAge: Int
+    agentRating: Float
+    storeLatitude: Float
+    storeLongitude: Float
+    dropLatitude: Float
+    dropLongitude: Float
+    orderDate: String
+    orderTime: String
+    pickupTime: String
+    weather: String
+    traffic: String
+    vehicle: String
+    area: String
+    deliveryTime: Int
+    category: String
+}
+
+# Query operations
+type Query {
+    getAllDeliveries: [Delivery]
+    getDeliveryById(id: ID!): Delivery
+}
+
+# Input type for creating or updating a delivery
+input DeliveryInput {
+    orderId: String
+    agentAge: Int
+    agentRating: Float
+    storeLatitude: Float
+    storeLongitude: Float
+    dropLatitude: Float
+    dropLongitude: Float
+    orderDate: String
+    orderTime: String
+    pickupTime: String
+    weather: String
+    traffic: String
+    vehicle: String
+    area: String
+    deliveryTime: Int
+    category: String
+}
+
+# Mutation operations
+type Mutation {
+    createDelivery(input: DeliveryInput!): Delivery
+    updateDelivery(id: ID!, input: DeliveryInput!): Delivery
+    deleteDelivery(id: ID!): Boolean
+}
